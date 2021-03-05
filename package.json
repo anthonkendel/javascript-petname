@@ -4,7 +4,7 @@
   "description": "JavaScript Petname",
   "main": "main.js",
   "scripts": {
-    "test": "jest",
+    "build": "tsc",
     "fetch-petname-values": "ts-node src/data/fetch-petname-values.ts"
   },
   "keywords": [
