@@ -1,0 +1,22 @@
+{
+  "name": "javascript-petname",
+  "version": "0.0.0",
+  "description": "JavaScript Petname",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "fetch-petname-values": "ts-node src/data/fetch-petname-values.ts"
+  },
+  "keywords": [
+    "javascript",
+    "petname"
+  ],
+  "author": "Anthon <anthon.kende@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node-fetch": "2.5.8",
+    "node-fetch": "2.6.1",
+    "ts-node": "9.1.1",
+    "typescript": "4.2.3"
+  }
+}
