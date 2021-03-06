@@ -3,7 +3,7 @@
 Petname implementation in JavaScript, inspired by [Dustin Kirkland's Petname](https://github.com/dustinkirkland/petname). The data is from [petname](https://github.com/dustinkirkland/petname).
 
 [![latest git version](https://img.shields.io/github/v/tag/anthonkendel/javascript-petname?label=version)](https://github.com/anthonkendel/javascript-petname)
-[![latest npm version](https://img.shields.io/npm/v/anthonkendel/javascript-petname)](https://www.npmjs.com/package/javascript-petname)
+[![latest npm version](https://img.shields.io/npm/v/javascript-petname)](https://www.npmjs.com/package/javascript-petname)
 [![license](https://img.shields.io/github/license/anthonkendel/javascript-petname)](https://github.com/anthonkendel/javascript-petname/blob/master/LICENSE)
 
 ## Installation
