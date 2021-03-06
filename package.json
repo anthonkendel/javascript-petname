@@ -15,14 +15,24 @@
     "start": "node src/cli.js",
     "test": "npm run prettier:check && npm run jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonkendel/javascript-petname.git"
+  },
   "keywords": [
     "javascript",
-    "petname"
+    "petname",
+    "anthonkendel"
   ],
   "author": "Anthon <anthon.kende@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anthonkendel/javascript-petname/issues"
+  },
+  "homepage": "https://github.com/anthonkendel/javascript-petname#readme",
   "devDependencies": {
     "@arbetsmyra/prettier-config": "1.2.1",
+    "@arbetsmyra/semantic-release-config": "1.1.18",
     "jest": "26.6.3",
     "node-fetch": "2.6.1",
     "prettier": "2.2.1"
@@ -30,5 +40,15 @@
   "engines": {
     "node": ">=12"
   },
-  "prettier": "@arbetsmyra/prettier-config"
+  "renovate": {
+    "extends": [
+      "@arbetsmyra"
+    ]
+  },
+  "prettier": "@arbetsmyra/prettier-config",
+  "release": {
+    "extends": [
+      "@arbetsmyra/semantic-release-config"
+    ]
+  }
 }
