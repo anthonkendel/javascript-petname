@@ -1,0 +1,8 @@
+__tests__
+.github
+.gitignore
+.nvmrc
+.prettierignore
+*.code-workspace
+coverage
+renovate.json
