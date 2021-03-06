@@ -5,7 +5,10 @@
   "main": "main.js",
   "scripts": {
     "build": "tsc",
-    "fetcher": "node src/data/fetcher.js"
+    "fetcher": "node src/data/fetcher.js",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
+    "test": "npm run prettier:check"
   },
   "keywords": [
     "javascript",
@@ -14,6 +17,9 @@
   "author": "Anthon <anthon.kende@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "node-fetch": "2.6.1"
-  }
+    "@arbetsmyra/prettier-config": "1.2.1",
+    "node-fetch": "2.6.1",
+    "prettier": "2.2.1"
+  },
+  "prettier": "@arbetsmyra/prettier-config"
 }
