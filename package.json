@@ -2,9 +2,11 @@
   "name": "javascript-petname",
   "version": "0.0.0",
   "description": "JavaScript Petname",
-  "main": "./src/main.js",
+  "main": "./src/petname.js",
   "bin": {
-    "javascript-petname": "./src/cli.js"
+    "javascript-petname": "./src/cli.js",
+    "js-petname": "./src/cli.js",
+    "petname": "./src/cli.js"
   },
   "scripts": {
     "build": "tsc",
