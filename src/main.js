@@ -14,7 +14,17 @@ function randomValue(values) {
   return values[index];
 }
 
-const separator = '-';
-const value = [randomValue(adverbs), randomValue(adjectives), randomValue(names)].join(separator);
+/**
+ * @returns {string}
+ */
+function generatePetname() {
+  const separator = '-';
 
-console.info(value);
+  const petname = [randomValue(adverbs), randomValue(adjectives), randomValue(names)].join(separator);
+
+  return petname;
+}
+
+module.exports = {
+  generatePetname,
+};

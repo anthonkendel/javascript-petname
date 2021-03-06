@@ -2,7 +2,10 @@
   "name": "javascript-petname",
   "version": "0.0.0",
   "description": "JavaScript Petname",
-  "main": "main.js",
+  "main": "./src/main.js",
+  "bin": {
+    "javascript-petname": "./src/cli.js"
+  },
   "scripts": {
     "build": "tsc",
     "fetcher": "node src/data/fetcher.js",
