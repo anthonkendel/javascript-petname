@@ -1,3 +1,5 @@
+const { isNumber } = require('./isNumber');
+
 class ArgumentParser {
   constructor() {
     this.options = {};
@@ -11,8 +13,7 @@ class ArgumentParser {
    */
   parseArgument(argument, value, validArguments, key) {
     if (validArguments.includes(argument)) {
-      const valueAsNumber = Number(value);
-      this.options[key] = isNaN(valueAsNumber) ? value : valueAsNumber;
+      this.options[key] = isNumber(value) ? Number(value) : value;
     }
   }
 }

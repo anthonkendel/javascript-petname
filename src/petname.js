@@ -21,6 +21,7 @@ function getPart(parts) {
  */
 function generatePetname({ words = 2, separator = '-' } = {}) {
   let petnameParts = [];
+
   if (words <= 0) {
     words = 2;
   }
@@ -37,6 +38,7 @@ function generatePetname({ words = 2, separator = '-' } = {}) {
       .map(() => getPart(adverbs));
     petnameParts = [...adverbParts, getPart(adjectives), getPart(names)];
   }
+
   const petname = petnameParts.join(separator);
   return petname;
 }

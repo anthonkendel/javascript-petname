@@ -24,6 +24,16 @@ it('should generate petname with adjective', () => {
   expect(names).toContain(parts[1]);
 });
 
+it('should generate petname with adjective with default parts if words option is negative', () => {
+  const words = -2;
+  const petname = generatePetname({ separator, words });
+  const parts = petname.split(separator);
+
+  expect(parts).toHaveLength(2);
+  expect(adjectives).toContain(parts[0]);
+  expect(names).toContain(parts[1]);
+});
+
 it('should generate petname with adjective and adverb', () => {
   const words = 3;
   const petname = generatePetname({ separator, words });
