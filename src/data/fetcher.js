@@ -1,7 +1,7 @@
 const { writeFile } = require('fs').promises;
 const fetch = require('node-fetch');
 
-// All credit for the sources goes to https://github.com/dustinkirkland/petname.
+// All credit goes to https://github.com/dustinkirkland/petname.
 const baseURL = 'https://raw.githubusercontent.com/dustinkirkland/petname/master/usr/share/petname';
 const sizes = ['small', 'medium', 'large'];
 const types = ['adjectives', 'adverbs', 'names'];
