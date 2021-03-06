@@ -12,6 +12,7 @@
     "jest": "jest",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
+    "semantic-release": "semantic-release",
     "start": "node src/cli.js",
     "test": "npm run prettier:check && npm run jest"
   },
