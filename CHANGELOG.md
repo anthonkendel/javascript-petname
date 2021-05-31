@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/anthonkendel/javascript-petname/compare/v1.0.0...v1.1.0) (2021-05-31)
+
+
+### Bug Fixes
+
+* npm audit fix ([7a28f67](https://github.com/anthonkendel/javascript-petname/commit/7a28f67b808fcabf33710118db7d5836b7741e8c))
+
+
+### Features
+
+* generate typescript types ([0642a50](https://github.com/anthonkendel/javascript-petname/commit/0642a50687792abd8f6546d533363375a0f21cd9))
+
 # 1.0.0 (2021-03-06)
 
 
