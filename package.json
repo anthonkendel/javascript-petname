@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "JavaScript Petname",
   "main": "./src/petname.js",
+  "types": "./lib/petname.d.ts",
   "bin": {
     "javascript-petname": "./src/cli.js",
     "js-petname": "./src/cli.js"
   },
   "scripts": {
     "fetcher": "node src/data/fetcher.js",
+    "generate-types": "rimraf lib/* && tsc",
     "jest": "jest",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
@@ -36,7 +38,9 @@
     "@arbetsmyra/semantic-release-config": "1.1.20",
     "jest": "26.6.3",
     "node-fetch": "2.6.1",
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "rimraf": "3.0.2",
+    "typescript": "4.3.2"
   },
   "engines": {
     "node": ">=12"
