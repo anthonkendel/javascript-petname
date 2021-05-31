@@ -6,3 +6,4 @@ __tests__
 *.code-workspace
 coverage
 renovate.json
+tsconfig.json
