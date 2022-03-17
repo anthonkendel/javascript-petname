@@ -13,6 +13,7 @@ for (let index = 0; index < arguments.length; index++) {
   if (argument && value) {
     parser.parseArgument(argument, value, ['--words', '-w'], 'words');
     parser.parseArgument(argument, value, ['--separator', '-s'], 'separator');
+    parser.parseArgument(argument, value, ['--letters', '-l'], 'letters');
   }
   index++;
 }

@@ -57,3 +57,16 @@ it('should generate petname with adjective and multiple adverbs', () => {
   expect(adjectives).toContain(parts[3]);
   expect(names).toContain(parts[4]);
 });
+
+it('should generate petname with a max-length of 3', () => {
+  const words = 5;
+  const petname = generatePetname({ separator, words, letters: 3 });
+  const parts = petname.split(separator);
+
+  expect(parts).toHaveLength(words);
+  expect(parts[0].length).toBeLessThanOrEqual(3);
+  expect(parts[1].length).toBeLessThanOrEqual(3);
+  expect(parts[2].length).toBeLessThanOrEqual(3);
+  expect(parts[3].length).toBeLessThanOrEqual(3);
+  expect(parts[4].length).toBeLessThanOrEqual(3);
+});

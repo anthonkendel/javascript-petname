@@ -1,6 +1,6 @@
-const { adjectives } = require('./data/adjectives');
-const { adverbs } = require('./data/adverbs');
-const { names } = require('./data/names');
+let { adjectives } = require('./data/adjectives');
+let { adverbs } = require('./data/adverbs');
+let { names } = require('./data/names');
 
 /**
  * @param {string[]} parts
@@ -15,12 +15,18 @@ function getPart(parts) {
 }
 
 /**
- * @param {{ words: number, separator: string }} parameters
+ * @param {{ words: number, separator: string, letters: number }} parameters
  *
  * @returns {string}
  */
-function generatePetname({ words = 2, separator = '-' } = {}) {
+function generatePetname({ words = 2, separator = '-', letters = undefined } = {}) {
   let petnameParts = [];
+
+  if (letters !== undefined) {
+    adjectives = adjectives.filter((v) => v.length <= letters);
+    adverbs = adverbs.filter((v) => v.length <= letters);
+    names = names.filter((v) => v.length <= letters);
+  }
 
   if (words <= 0) {
     words = 2;
