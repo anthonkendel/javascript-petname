@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/anthonkendel/javascript-petname/compare/v1.1.0...v1.2.0) (2022-03-19)
+
+
+### Features
+
+* add letters argument ([61b688b](https://github.com/anthonkendel/javascript-petname/commit/61b688be7e30bc44fa26e3125d78acf077d03a53))
+
 # [1.1.0](https://github.com/anthonkendel/javascript-petname/compare/v1.0.0...v1.1.0) (2021-05-31)
 
 
