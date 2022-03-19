@@ -6,5 +6,5 @@
 export function generatePetname({ words, separator, letters }?: {
     words: number;
     separator: string;
-    letters?: number;
+    letters: number;
 }): string;
