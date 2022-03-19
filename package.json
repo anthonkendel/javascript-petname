@@ -1,6 +1,6 @@
 {
   "name": "javascript-petname",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "JavaScript Petname",
   "main": "./src/petname.js",
   "types": "./lib/petname.d.ts",
